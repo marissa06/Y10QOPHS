@@ -1,0 +1,12 @@
+#selection005
+
+weather = input("is it raining?:").lower()
+
+if weather == "yes":
+  wind = input("is it windy outside?:").lower()
+  if wind == "yes":
+    print("it is too windy to bring an umberella")
+  else:
+    print("take an umberella")
+else:
+  print("enjoy your day")
