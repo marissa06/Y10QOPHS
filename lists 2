@@ -1,0 +1,9 @@
+# challenge 2 - lists
+
+cars = []
+
+end = True
+while end == True:
+    choice = ("enter a car brand or press x to exit>>>")
+    if choice == "x":
+        end = False
