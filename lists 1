@@ -1,0 +1,10 @@
+# challenge 1 - lists
+
+cars = []
+brand = input("enter the name of a car brand>>>")
+cars.append(brand)
+brand2= input("enter another car brand>>>")
+cars.append(brand2)
+brand3 = input("enter one more car brand>>>")
+cars.append(brand3)
+print(cars)
