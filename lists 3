@@ -1,0 +1,16 @@
+# challenge 3 - lists
+count= 3
+names = []
+names.append(input("enter a name>>>"))
+names.append(input("enter a name>>>"))
+names.append(input("enter a name>>>"))
+end = True
+while end == True:
+    choice = input("do you want to enter anymore names>>>").lower()
+    if choice == "no":
+        end = False
+        print(names)
+        print("you have invited", count,"people")
+    elif choice == "yes":
+        names.append(input("enter a name>>>"))
+        count = count+1
