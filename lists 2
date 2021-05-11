@@ -4,6 +4,10 @@ cars = []
 
 end = True
 while end == True:
-    choice = ("enter a car brand or press x to exit>>>")
+    choice = input("enter a car brand or press x to exit>>>")
     if choice == "x":
         end = False
+    else:
+        cars.append(choice)
+        print(cars)
+
