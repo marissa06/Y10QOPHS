@@ -1,0 +1,12 @@
+# challenge 5 - lists
+
+food = []
+for run in range(4):
+    TOF = str(input("Enter a food >>>"))
+    food.append(TOF)
+    print(food)
+
+for run in range(2):
+    removefood = str(input("enter a food from the list to remove it >>>"))
+    food.remove(removefood)
+    print(food)
