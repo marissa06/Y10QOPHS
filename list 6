@@ -1,0 +1,12 @@
+# challenge 6 - lists
+
+nums = []
+for run in range(3):
+    number = int(input("enter a number>>>"))
+    nums.insert(0,number)
+choice = input("do you want the last number entered deleted??>>").lower()
+if choice == "yes":
+    del nums[0]
+    print(nums)
+else:
+    print(nums)
