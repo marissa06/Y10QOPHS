@@ -1,0 +1,31 @@
+#gcse exam question
+#task 1
+print("")
+end = True
+print("league regisrtation")
+while end == True:
+    Fn = str(input("enter your first name:"))
+    Ln = str(input("enter your last name:"))
+    Nn = str(input("enter your nickname name:"))
+    email = str(input("enter your email address:"))
+    print("")
+    skill = input("enter your skill level E for 'expert' OR C for 'casual':").upper()
+    if skill == "C":
+        print("Casual")
+        skill = "casual"
+    elif skill == "E":
+        print("Expert")
+        skill = "expert"
+    print("")
+    print(Fn)
+    print(Ln)
+    print(Nn)
+    print(email)
+    print(skill)
+    print("")
+    choice = input("is all of your personal infomation correct(Y/N):").upper()
+    if choice == "Y":
+        end = False
+        print("you are now registered for the league")
+    elif choice == "N":
+        end = True
