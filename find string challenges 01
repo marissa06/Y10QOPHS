@@ -1,0 +1,5 @@
+# find string challenges
+
+name = "marissa"
+thing = name.find("r")
+print(thing)
