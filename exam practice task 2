@@ -1,0 +1,63 @@
+# task 2
+email = input("email address:")
+skill = input("what is your skill level:").upper()
+gbp = 1
+usd = 1.50
+aud = 2
+choice = "y"
+while choice == "y":
+    currency = input("enter the currency you wish to pay in (uk,us,au)>>>").lower()
+    if currency == "uk":
+        fee = 1*10
+        if skill == "C":
+            fee = fee+20
+            print("your fee is",fee,"GBP")
+            choice=input("do you wish to calculate a different fee? y/n").lower()
+            if choice == "y":
+                choice = "y"
+            else:
+                choice = "n"
+        elif skill == "E":
+            fee = fee+35
+            print("your fee is",fee,"GBP")
+            choice=input("do you wish to calculate a different fee? y/n").lower()
+            if choice == "y":
+                choice = "y"
+            else:
+                choice = "n"
+    elif currency == "us":
+        fee = 1.5*10
+        if skill == "C":
+            fee = fee+20
+            print("your fee is",fee,"USD")
+            choice=input("do you wish to calculate a different fee? y/n").lower()
+            if choice == "y":
+                choice = "y"
+            else:
+                choice = "n"
+        elif skill == "E":
+            fee = fee+35
+            print("your fee is",fee,"USD")
+            choice=input("do you wish to calculate a different fee? y/n").lower()
+            if choice == "y":
+                choice = "y"
+            else:
+                choice = "n"
+    elif currency == "au":
+        fee = 2*10
+        if skill == "C":
+            fee = fee+20
+            print("your fee is",fee,"AUD")
+            choice=input("do you wish to calculate a different fee? y/n").lower()
+            if choice == "y":
+                choice = "y"
+            else:
+                choice = "n"
+        elif skill == "E":
+            fee = fee+35
+            print("your fee is",fee,"AUD")
+            choice=input("do you wish to calculate a different fee? y/n").lower()
+            if choice == "y":
+                choice = "y"
+            else:
+                choice = "n"
